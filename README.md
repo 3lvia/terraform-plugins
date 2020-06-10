@@ -1,5 +1,7 @@
 # terraform-plugins
-This repo contains compiled linux_amd64 binaries for plugins. This will be used by terraform workspaces for systems through git submodules
+This repo contains compiled linux_amd64 binaries for plugins. This will be used by terraform workspaces for systems through git submodules.
+
+Note this repo must be public for easy access for terraform enterprise.
 
 # Plugins distributed by this repo
 
