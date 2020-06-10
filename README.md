@@ -4,11 +4,11 @@ This repo contains compiled linux_amd64 binaries for plugins. This will be used 
 # Plugins distributed by this repo
 
 ## terraform-provider-elvid
-Provider for maintainnig ElvID resources
+Provider for maintainnig ElvID resources. Source code: https://github.com/3lvia/terraform-provider-elvid
 
 ## terraform-provider-azuredevops
 Provider for maintaining azuredevops resources.
-This is not created by Microsoft. See their license here: https://github.com/microsoft/terraform-provider-azuredevops/blob/master/LICENSE
+This is created by Microsoft. See their license here: https://github.com/microsoft/terraform-provider-azuredevops/blob/master/LICENSE
 
 # To add a new plugin or new plugin version
 Note that you do not need to remove old versions of the plugin, if it is desired to keep that available for consumers that have not upgraded
