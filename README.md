@@ -7,11 +7,13 @@ This repo contains compiled linux_amd64 binaries for plugins. This will be used 
 Provider for maintainnig ElvID resources. Source code: https://github.com/3lvia/terraform-provider-elvid
 
 ## terraform-provider-azuredevops
-Provider for maintaining azuredevops resources.
-This is created by Microsoft. See their license here: https://github.com/microsoft/terraform-provider-azuredevops/blob/master/LICENSE
+Provider for maintaining azuredevops resources created by Microsoft.
+
+terraform-provider-azuredevops license: https://github.com/microsoft/terraform-provider-azuredevops/blob/master/LICENSE
 
 # To add a new plugin or new plugin version
 Note that you do not need to remove old versions of the plugin, if it is desired to keep that available for consumers that have not upgraded
+
 ## Build the provider or get linux_amd64 binaries from another source
 For building:
 ```console
@@ -31,8 +33,10 @@ git push
 
 # Usage from the {system}-terraform repo/workspace
 ## Install this repo as an submodule
-Note 1: The folder terraform.d\plugins\linux_amd64 must be removed from {system}-terraform. Commit this removal
-Note 2: The terraform repo must "Include submodules on clone"
+Note 1: The folder terraform.d\plugins\linux_amd64 must be removed from {system}-terraform. Commit this removal.
+
+Note 2: The terraform repo must "Include submodules on clone".
+
 ```console
 git submodule add https://github.com/3lvia/terraform-plugins.git terraform.d/plugins/linux_amd64
 ```
