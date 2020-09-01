@@ -12,11 +12,10 @@ Provider for maintainnig ElvID resources. Source code: https://github.com/3lvia/
 Note that you do not need to remove old versions of the plugin, if it is desired to keep that available for consumers that have not upgraded
 
 ## Build the provider or get linux_amd64 binaries from another source
-For building:
+For building from powershell from provider source:
 ```console
-$env:GOOS = "linux"
-go build -o terraform-provider-{name}_v{version}
-# If you are building an custom provider that we maintains, then create an release with the same version number in the provider repo
+$env:GOOS = "windows";$env:GOARCH = "amd64"; go build -o; go build -o C:\3lvia\terraform-plugins\terraform-provider-{name}_v{version}_windows
+$env:GOOS = "linux"; go build -o C:\3lvia\terraform-plugins\terraform-provider-{name}_v{version}
 ```
 
 ## Add the plugin binariy to this repo and make it executable 
