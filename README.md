@@ -41,6 +41,11 @@ git submodule add https://github.com/3lvia/terraform-plugins.git terraform.d/plu
 Unfortionatly we need to run an update in the {system}-terraform repo to get newer versions of this submodule
 ```console
 git submodule foreach git pull origin master
+git add -A
+git commit -m "Updated submodules"
+git push
 ```
+
+Merge to master also for {system}-terraform
 
 
