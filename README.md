@@ -9,23 +9,17 @@ Note this repo must be public for easy access for terraform enterprise.
 Provider for maintainnig ElvID resources. Source code: https://github.com/3lvia/terraform-provider-elvid
 
 # To add a new plugin or new plugin version
-Note that you do not need to remove old versions of the plugin, if it is desired to keep that available for consumers that have not upgraded
+## Build and the plugin binary to the repo and make it executable
+This involves go build. For terraform-provider-elvid follow the readme in that repo first.
 
-## Build the provider or get linux_amd64 binaries from another source
-For building from powershell from provider source:
+Then add the binaries as executable:
 ```console
-$env:GOOS = "windows";$env:GOARCH = "amd64"; go build -o; go build -o C:\3lvia\terraform-plugins\terraform-provider-{name}_v{version}_windows
-$env:GOOS = "linux"; go build -o C:\3lvia\terraform-plugins\terraform-provider-{name}_v{version}
-```
-
-## Add the plugin binariy to this repo and make it executable 
-```console
-# place the binary in the root of this repo
-git add terraform-provider-{name}_v{version}
-git update-index --chmod=+x terraform-provider-{name}_v{version}
+git add . --chmod=+x
 git commit -m "Added terraform-provider-{name}_v{version} as executable"
 git push
 ```
+## Clean up some old versions
+Maybe clean up by removing some old versions
 
 # Usage from the {system}-terraform repo/workspace
 ## Install this repo as an submodule
