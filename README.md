@@ -12,6 +12,8 @@ Provider for maintainnig ElvID resources. Source code: https://github.com/3lvia/
 ## Build and the plugin binary to the repo and make it executable
 This involves go build. For terraform-provider-elvid follow the readme in that repo first.
 
+Add binaries to the elvid.elvia.io folder as well
+
 Then add the binaries as executable:
 ```console
 git add . --chmod=+x
